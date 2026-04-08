@@ -1,13 +1,65 @@
 function Page() {
+  return (
+    <div className="flex justify-center items-center flex-col gap-10 bg-gray-400  h-screen">
+      <h1 className="text-5xl font-bold">CV-Application</h1>
+      <div className="shadow-xl flex justify-center w-300">
+        <div className="h-200 w-1/2 bg-pink-300"></div>
+        <div className="bg-gray-50 w-1/2 h-200 p-10 flex items-center flex-col">
+          <div>
+            <h1 className="text-3xl font-semibold">Name is LOREM</h1>
+            <p className="flex gap-5">
+              <p>email: </p>
+              <p>phone no. :</p>
+            </p>
+          </div>
 
+          {/* 2ND PART!! */}
 
-    return (
-        <div className="flex justify-center items-center bg-gray-400  h-screen">
-        <div className="h-200 w-300 bg-gray-50 shadow-xl flex justify-center">
-            <div className="h-full bg-black w-0.5"></div>
+          <div className="w-full ">
+            <div className="flex w-full justify-between mt-10 ">
+              <div>
+                <h3 className="text-xl font-semibold">School Name</h3>
+                <h4 className="font-medium">12th Boards </h4>
+              </div>
+
+              <h5 className="text-lg font-medium">8-04-2026</h5>
+            </div>
+
+            <div className="flex w-full justify-between mt-10 ">
+              <div>
+                <h3 className="text-xl font-semibold">College Name</h3>
+                <h4 className="font-medium">BCA </h4>
+              </div>
+
+              <h5 className="text-lg font-medium">9-04-2026</h5>
+            </div>
+          </div>
+
+          {/* 3rd part */}
+
+          <div className="w-full mt-20">
+            <div className="flex w-full justify-between mt-10 ">
+              <div>
+                <h3 className="text-xl font-semibold">Company Name</h3>
+                <h4 className="font-medium">HCL </h4>
+              </div>
+
+              <h5 className="text-lg font-medium">8-04-2026</h5>
+            </div>
+
+            <div className="flex w-full justify-between mt-10 ">
+              <div>
+                <h3 className="text-xl font-semibold">Company Name</h3>
+                <h4 className="font-medium">ORACLE </h4>
+              </div>
+
+              <h5 className="text-lg font-medium">9-04-2026</h5>
+            </div>
+          </div>
         </div>
-        </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Page
+export default Page;
