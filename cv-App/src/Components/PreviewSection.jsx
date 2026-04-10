@@ -1,14 +1,14 @@
-function Preview() {
+function Preview({cv}) {
 
 
     return(
         <>
                 <div className="bg-gray-50 w-1/2 h-200 p-10 flex items-center flex-col">
           <div>
-            <h1 className="text-3xl font-semibold">Name is LOREM</h1>
+            <h1 className="text-3xl font-semibold">{cv.personal.name}</h1>
             <p className="flex gap-5">
-              <p>email: </p>
-              <p>phone no. :</p>
+              <p>email: {cv.personal.email} </p>
+              <p>phone no. : {cv.personal.phone}</p>
             </p>
           </div>
 
