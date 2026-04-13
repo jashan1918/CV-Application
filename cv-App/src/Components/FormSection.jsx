@@ -7,10 +7,12 @@ function Form ({cv, setCv}) {
           <div className="h-full w-full bg-blue-400 flex flex-col items-center">
             <h1 className="text-xl font-bold">INPUTS</h1> 
 
-            <div className="bg-white w-full h-10 mt-5">
+            <div className="bg-white w-full mt-5">
 
-            <label htmlFor="name">Name
-              <input type="text" id="name" onChange={(e) => {
+            <section className="flex flex-col gap-4 w-full">
+              <h3 className="font-semibold text-xl">Personal :-</h3>
+            <label htmlFor="name" className="text-sm font-medium">Name
+              <input type="text" id="name" className="border p-1 w-40 rounded" onChange={(e) => {
                 setCv({
                   ...cv,
                   personal : {
@@ -22,10 +24,11 @@ function Form ({cv, setCv}) {
               }} />
               </label>
 
-              <label htmlFor="email">
+              <div className="flex flel-col gap-10">
+              <label htmlFor="email" className="text-sm font-medium">
                 email:
 
-                <input type="email" id="email" onChange={(e) => {
+                <input type="email" id="email" className="border p-1 w-40 rounded" onChange={(e) => {
                   setCv({
                     ...cv,
                     personal: {
@@ -36,9 +39,9 @@ function Form ({cv, setCv}) {
                 }} />
               </label>
 
-              <label htmlFor="phone">
+              <label htmlFor="phone" className="text-sm font-medium">
                 Phone
-                <input type="text" id="phone" onChange={(e) => {
+                <input type="text" id="phone" className="border p-1 w-40 rounded" onChange={(e) => {
 
                   setCv({
                     ...cv,
@@ -49,6 +52,113 @@ function Form ({cv, setCv}) {
                   })
                 }} />
               </label>
+
+              </div>
+
+              </section>
+            </div>
+
+
+                {/* EDUCATION SECTION */}
+              <div className="bg-white w-full mt-5">
+
+            <section className="flex flex-col gap-4 w-full">
+              <h3 className="font-semibold text-xl">Education :-</h3>
+            <label htmlFor="name" className="text-sm font-medium">School Name:- 
+              <input type="text" id="name" className="border p-1 w-40 rounded" onChange={(e) => {
+                setCv({
+                  ...cv,
+                  personal : {
+                    ...cv.personal,
+                    name: e.target.value
+
+                  }
+                })
+              }} />
+              </label>
+
+              <div className="flex flel-col gap-10">
+              <label htmlFor="email" className="text-sm font-medium">
+                Degree Name:-
+
+                <input type="email" id="email" className="border p-1 w-40 rounded" onChange={(e) => {
+                  setCv({
+                    ...cv,
+                    personal: {
+                      ...cv.personal,
+                      email: e.target.value
+                    }
+                  })
+                }} />
+              </label>
+
+              <label htmlFor="phone" className="text-sm font-medium">
+                Date
+                <input type="text" id="phone" className="border p-1 w-40 rounded" onChange={(e) => {
+
+                  setCv({
+                    ...cv,
+                    personal: {
+                      ...cv.personal,
+                      phone: e.target.value
+                    }
+                  })
+                }} />
+              </label>
+
+              </div>
+
+              </section>
+            </div>
+
+            <div className="bg-white w-full mt-5">
+
+            <section className="flex flex-col gap-4 w-full">
+            <label htmlFor="name" className="text-sm font-medium">College Name
+              <input type="text" id="name" className="border p-1 w-40 rounded" onChange={(e) => {
+                setCv({
+                  ...cv,
+                  personal : {
+                    ...cv.personal,
+                    name: e.target.value
+
+                  }
+                })
+              }} />
+              </label>
+
+              <div className="flex flel-col gap-10">
+              <label htmlFor="email" className="text-sm font-medium">
+                Degree Name:
+
+                <input type="email" id="email" className="border p-1 w-40 rounded" onChange={(e) => {
+                  setCv({
+                    ...cv,
+                    personal: {
+                      ...cv.personal,
+                      email: e.target.value
+                    }
+                  })
+                }} />
+              </label>
+
+              <label htmlFor="phone" className="text-sm font-medium">
+                Date
+                <input type="text" id="phone" className="border p-1 w-40 rounded" onChange={(e) => {
+
+                  setCv({
+                    ...cv,
+                    personal: {
+                      ...cv.personal,
+                      phone: e.target.value
+                    }
+                  })
+                }} />
+              </label>
+
+              </div>
+
+              </section>
             </div>
 
           </div>

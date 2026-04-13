@@ -7,7 +7,7 @@ function Page() {
     const [cv, setCv] = useState({
 
         personal: {
-            name: "",
+            name: "John Doe",
             email: "",
             phone: ""
         },
