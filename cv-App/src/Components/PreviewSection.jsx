@@ -1,9 +1,9 @@
-function Preview({cv}) {
+function Preview({cv, setIsSubmitted}) {
 
 
     return(
         <>
-                <div className="bg-gray-50 w-1/2 h-200 p-10 flex items-center flex-col">
+                <div className="bg-gray-50 w-1/2 h-200 p-10 flex items-center flex-col print:block">
           <div>
             <h1 className="text-3xl font-semibold">{cv.personal.name}</h1>
             <p className="flex gap-5">
@@ -55,6 +55,11 @@ function Preview({cv}) {
               <h5 className="text-lg font-medium">9-04-2026</h5>
             </div>
           </div>
+
+          <div className=" h-10">
+          <button className="bg-green-400 px-4 py-2 h-full text-white font-bold mt-28 rounded hover:bg-green-600 cursor-pointer print:hidden" onClick={() => setIsSubmitted(false)}>EDIT</button>
+          <button className="border-green-400 ml-5 border-2 h-full px-4 font-semibold text-green-500 hover:bg-green-400 hover:text-white print:hidden" onClick={() => window.print()}>DOWNLOAD</button>
+</div>
         </div>
         </>
     )

@@ -1,10 +1,10 @@
-function Form ({cv, setCv}) {
+function Form ({cv, setCv, setIsSubmitted}) {
 
 
     return(
         <>
-          <div className="h-200 w-1/2 bg-gray-50 p-10 pt-0">
-          <div className="h-full w-full bg-blue-400 flex flex-col items-center">
+          <div className="h-200 w-1/2 bg-gray-50 p-10 pt-0 print:hidden">
+          <div className="h-full w-full  flex flex-col items-center">
             <h1 className="text-xl font-bold">INPUTS</h1> 
 
             <div className="bg-white w-full mt-5">
@@ -260,7 +260,7 @@ function Form ({cv, setCv}) {
 
               </section>
             </div>
-
+                  <button className="bg-blue-500 px-4 py-2 mt-5 rounded text-white font-semibold hover:bg-blue-600 cursor-pointer" onClick={() => setIsSubmitted(true)}>SUBMIT</button>
           </div>
           </div>
         </>
