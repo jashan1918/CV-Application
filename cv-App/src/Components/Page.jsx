@@ -13,8 +13,8 @@ function Page() {
         },
 
         education: [
-             {school: "", degree: "", date: "" },
-            { college: "", degree: "", date: "" }
+            {school: "school name", class: "12th", date: "01-01-2000" },
+            { college: "college name", degree: "BCA", date: "01-01-2000" }
         ],
 
           experience: [

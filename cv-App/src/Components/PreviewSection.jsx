@@ -17,20 +17,20 @@ function Preview({cv}) {
           <div className="w-full ">
             <div className="flex w-full justify-between mt-10 ">
               <div>
-                <h3 className="text-xl font-semibold">School Name</h3>
-                <h4 className="font-medium">12th Boards </h4>
+                <h3 className="text-xl font-semibold">{cv.education[0].school}</h3>
+                <h4 className="font-medium">{cv.education[0].class} </h4>
               </div>
 
-              <h5 className="text-lg font-medium">8-04-2026</h5>
+              <h5 className="text-lg font-medium">{cv.education[0].date}</h5>
             </div>
 
             <div className="flex w-full justify-between mt-10 ">
               <div>
-                <h3 className="text-xl font-semibold">College Name</h3>
-                <h4 className="font-medium">BCA </h4>
+                <h3 className="text-xl font-semibold">{cv.education[1].college}</h3>
+                <h4 className="font-medium">{cv.education[1].degree} </h4>
               </div>
 
-              <h5 className="text-lg font-medium">9-04-2026</h5>
+              <h5 className="text-lg font-medium">{cv.education[1].date}</h5>
             </div>
           </div>
 
